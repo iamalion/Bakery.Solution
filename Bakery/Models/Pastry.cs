@@ -10,12 +10,14 @@ namespace Bakery.Models
     public Pastry(int numOfUnits)
     {
         PastryUnits = numOfUnits;
-        CostOfUnit = 3;
     }
     public int PastryCost()
     {
-        int pastryCost = PastryUnits * CostOfUnit;
-        return pastryCost;
+        int costOfPastryOrder = 0;
+        int numberOfMultiples = this.PastryUnits/4;
+        int remainder = this.PastryUnits%4;
+        costOfPastryOrder = (numberOfMultiples*6)+(remainder*2);
+        return costOfPastryOrder;
     }
   }
 }

@@ -17,14 +17,22 @@ namespace Bakery.Tests
     public void PastryCost_ReturnsCostOfOneUnit_PastryCost()
     {
         Pastry newPastry = new Pastry(1);
-        Assert.AreEqual(3, newPastry.PastryCost());
+        Assert.AreEqual(2, newPastry.PastryCost());
     }
 
     [TestMethod]
     public void PastryCost_ReturnsCostOfOTwoUnits_PastryCost()
     {
         Pastry newPastry = new Pastry(2);
-        Assert.AreEqual(6, newPastry.PastryCost());
+        Assert.AreEqual(4, newPastry.PastryCost());
+    }
+
+    [TestMethod]
+
+    public void PastryCost_ReturnsCostOfThreeUnits_PastryCost()
+    {
+      Pastry newPastry = new Pastry(3);
+      Assert.AreEqual(6, newPastry.PastryCost());
     }
   }
 }
