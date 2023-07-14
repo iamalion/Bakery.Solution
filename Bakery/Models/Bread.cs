@@ -1,3 +1,5 @@
+using System;
+
 namespace Bakery.Models
 {
   public class Bread
@@ -12,11 +14,11 @@ namespace Bakery.Models
     }
     public int BreadCost()
     {
-        int costOfBreadOrder = 0;
-        int numberOfMultiples = this.Loaves/3;
-        int remainder = this.Loaves%3;
-        costOfBreadOrder = (numberOfMultiples*10)+(remainder*5);
-        return costOfBreadOrder;
+      int costOfBreadOrder = 0;
+      int numberOfMultiples = this.Loaves/3;
+      int remainder = this.Loaves%3;
+      costOfBreadOrder = (numberOfMultiples*10)+(remainder*5);
+      return costOfBreadOrder;
     }
   }
 }
