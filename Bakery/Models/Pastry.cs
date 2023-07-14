@@ -2,6 +2,20 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-    // Code for Bread business logic will go here.
+    public int PastryUnits { get; set; }
+    public int CostOfUnit { get; set; }
+
+    public Pastry() { }
+
+    public Pastry(int numOfUnits)
+    {
+        PastryUnits = numOfUnits;
+        CostOfUnit = 3;
+    }
+    public int PastryCost()
+    {
+        int pastryCost = PastryUnits * CostOfUnit;
+        return pastryCost;
+    }
   }
 }
