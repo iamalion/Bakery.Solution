@@ -44,9 +44,11 @@ namespace Bakery.Tests
 
         }
         [TestMethod]
-        public void BreadCost_ReturnsCostofGiantOrder_BreadCost();
-        Bread newBread = new Bread(500);
-        Asser.AreEqual(1670, newBread.BreadCost());
+        public void BreadCost_ReturnsCostofGiantOrder_BreadCost()
+        {
+            Bread newBread = new Bread(500);
+            Assert.AreEqual(1670, newBread.BreadCost());
+        }
 
         
 
