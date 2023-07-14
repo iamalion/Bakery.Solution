@@ -9,7 +9,7 @@ By: _Lindsay Warr_
 
 ## **Description**
 
-This is the project for week 7 at Epicodus to demonstrate profienciency with TDD in C#
+This is the project for week 7 at Epicodus to demonstrate profienciency with TDD in C#. It is a console app that allows a user to "order" a number of loaves of bread and a number of pastries, then the console will return the total for the order. 
 
 ## Complete Setup
 
