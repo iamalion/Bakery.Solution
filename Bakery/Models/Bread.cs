@@ -9,12 +9,14 @@ namespace Bakery.Models
     public Bread(int numOfLoaves)
     {
         Loaves = numOfLoaves;
-        CostOfLoaf = 5;
     }
     public int BreadCost()
     {
-        int breadCost = Loaves * CostOfLoaf;
-        return breadCost;
+        int costOfBreadOrder = 0;
+        int numberOfMultiples = this.Loaves/3;
+        int remainder = this.Loaves%3;
+        costOfBreadOrder = (numberOfMultiples*10)+(remainder*5);
+        return costOfBreadOrder;
     }
   }
 }

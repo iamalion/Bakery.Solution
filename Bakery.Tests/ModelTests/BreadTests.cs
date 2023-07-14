@@ -29,6 +29,16 @@ namespace Bakery.Tests
 
         }
 
+        [TestMethod]
+        public void BreadCost_ReturnsCostOfThreeLoaves_BreadCost()
+        {
+            Bread newBread = new Bread(3);
+            Assert.AreEqual(10, newBread.BreadCost());
+
+        }
+
+        
+
     
   }
 }
